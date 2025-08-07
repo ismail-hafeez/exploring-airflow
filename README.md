@@ -10,7 +10,7 @@
 
 `source venv/bin/activate`
 
-`export AIRFLOW_VERSION=2.9.1`
+`export AIRFLOW_VERSION=2.10.4`
 
 `export PYTHON_VERSION=3.11`
 
@@ -23,15 +23,25 @@
 
 
 `export AIRFLOW_HOME=~/airflow`
+
 `airflow db init`
-`airflow users create \
+
+`airflow users create \`
+
     --username  \
+    
     --firstname  \
+    
     --lastname  \
+    
     --role Admin \
+    
     --email  \
-    --password `
+    
+    --password
+    
+## === In new terminals (with virtualenv activated) ===
 `airflow webserver --port 8080`
-## === In a new terminal (with virtualenv activated), start the scheduler: ===
+
 `airflow scheduler`
 
