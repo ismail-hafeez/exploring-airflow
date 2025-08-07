@@ -1,0 +1,14 @@
+# VS Code Stuff
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Airflow logs and database
+logs/
+airflow.db
+webserver_config.py
+airflow_init.txt
+airflow.cfg
+
+
